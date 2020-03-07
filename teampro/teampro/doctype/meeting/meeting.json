@@ -1,0 +1,60 @@
+{
+ "creation": "2020-03-04 20:25:59.595656",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "employee_name",
+  "department",
+  "designation",
+  "mail_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Code",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "name1.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fetch_from": "name1.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fetch_from": "name1.user_id",
+   "fieldname": "mail_id",
+   "fieldtype": "Data",
+   "label": "Mail id"
+  },
+  {
+   "fetch_from": "name1.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-03-05 13:25:13.050149",
+ "modified_by": "Administrator",
+ "module": "Teampro",
+ "name": "Meeting",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
